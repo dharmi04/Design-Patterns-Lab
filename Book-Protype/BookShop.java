@@ -26,6 +26,19 @@ public class BookShop implements Cloneable {
         }
     }
     public String toString(){
-        return shopName+ books;
+        return "BookShop [shopName = " + shopName + ", books = " + books + "]";
+    }
+    // @Override
+    // protected  Object clone() throws CloneNotSupportedException{
+    //     return super.clone();
+    // }
+    @Override
+    protected BookShop clone() throws CloneNotSupportedException {
+        BookShop shop = new BookShop();
+        for (Book b: this.getBooks()){
+            shop.getBooks().add(b);
+        }
+        return shop;
     }
 }
+

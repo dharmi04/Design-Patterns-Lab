@@ -4,12 +4,13 @@ public class Demo {
     bs.loadData();
     bs.setShopName("Shop 1");
 
-    BookShop bs1 =bs.clone();
-    bs1.setShopName("Shop 2"
-    )
+   //  BookShop bs1 =(BookShop)bs.clone();
+   //  bs1.setShopName("Shop 2");
+   BookShop bs1 = (BookShop)bs.clone();
+   bs1.setShopName("Shop2");
+
+    bs.getBooks().remove(2);
     System.out.println(bs);
-
-
-
+    System.out.println(bs1);
  }   
 }
