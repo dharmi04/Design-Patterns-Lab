@@ -1,0 +1,3 @@
+interface ProductFactory {
+    Product createProduct();
+}
