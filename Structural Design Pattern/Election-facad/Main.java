@@ -11,7 +11,7 @@ class VoterRegistrationSubsystem {
 class CandidateRegistrationSubsystem {
     public void registerCandidates() {
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Enter candidate's name: ");
+            System.out.print("Enter candidate's name here: ");
             String name = scanner.nextLine();
             System.out.println("Candidate " + name + " registered");
         }
